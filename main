@@ -12,3 +12,16 @@ def register_patient(name, age, gender, contact_info, medical_history):
 if __name__ == "__main__":
     new_patient = register_patient("John Doe", 30, "Male", "123-456-7890", "None")
     print(new_patient)
+
+# src/appointment.py
+def schedule_appointment(patient_id, date, time):
+    appointment = {
+        "patient_id": patient_id,
+        "date": date,
+        "time": time
+    }
+    return appointment
+
+if __name__ == "__main__":
+    new_appointment = schedule_appointment(1, "2024-06-07", "10:00 AM")
+    print(new_appointment)
