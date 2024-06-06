@@ -1,0 +1,14 @@
+# src/main.py
+def register_patient(name, age, gender, contact_info, medical_history):
+    patient = {
+        "name": name,
+        "age": age,
+        "gender": gender,
+        "contact_info": contact_info,
+        "medical_history": medical_history
+    }
+    return patient
+
+if __name__ == "__main__":
+    new_patient = register_patient("John Doe", 30, "Male", "123-456-7890", "None")
+    print(new_patient)
